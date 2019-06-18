@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>WEB GIS Application-Contact Us</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<br>
+   <a href="index.html" style="text-decoration:none"><center><b><div class="title"><font size="20px">WEB GIS</font></div></b></center></a>
+   <br><br>
+<div id="Top_menu" align="left"> 
+	<a href="index.html"><div class="tab">Home</div></a>
+			<a href="gallery.html"><div class="tab">Gallery</div></a>
+
+	<a  href="about.html"><div class="tab">About Us</div></a>
+	<a  href="contact.html"><div class="tab">Contact Us</div></a>
+	
+
+	
+</div>
+</header>
+  
+<nav> 
+   <ul>
+    <li><a href="mobile.php">Students' Information</a><hr>
+				<ol >
+					<li><a href="s_obc.html" height="200" width="300">OBC Students</a></li>
+					<li><a href="s_sc.html" height="200" width="300">SC Students</a></li>
+					<li><a href="s_st.html" height="200" width="300">ST Students</a></li>
+					<li><a href="s_total.html" height="200" width="300">Total Students</a></li>
+					<li><a href="s_gbratio.html" height="200" width="300">Girl Students</a></li>
+
+				</ol>
+				</li>
+				
+				    <li><a href="mobile.php">Teaching Staff Information</a><hr>
+				<ol >
+					<li><a href="t_male.html" height="200" width="300">Male Teachers</a></li>
+					<li><a href="t_female.html" height="200" width="300">Female Teachers</a></li>
+					<li><a href="t_head.html" height="200" width="300">Head Teacher</a></li>
+
+
+				</ol>
+				</li>
+    <li><a href="mobile.php">Students' Information</a><hr>
+				<ol >
+					<li><a href="f_electric.html" height="200" width="300">Electricity</a></li>
+					<li><a href="f_toilet.html" height="200" width="300">Toilets</a></li>
+					<li><a href="f_water.html" height="200" width="300">Drinking Water</a></li>
+					<li><a href="f_computer.html" height="200" width="300">Computer</a></li>
+					<li><a href="f_classroom.html" height="200" width="300">Number of Classrooms</a></li>
+
+				</ol>
+				</li>
+
+  </ul>
+</nav>
+<br>
+<iframe src="http://localhost:8080/geoserver/Thesis_Village_Data/wms?service=WMS&version=1.1.0&request=GetMap&layers=Thesis_Village_Data%3A2012_Electricity&bbox=81.52483617721163%2C25.02902880963982%2C81.81289611313963%2C25.345409991110564&width=699&height=768&srs=EPSG%3A404000&format=application/openlayers" height="600" width="575" style="border:3px solid black;">NYC map</iframe>
+	
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Legends/Electricity_2012.PNG" width="180px" height="180px"  style="position:absolute;
+  top:650px;
+  right:680px;"></img>
+	
+<iframe src="http://localhost:8080/geoserver/Thesis_Village_Data/wms?service=WMS&version=1.1.0&request=GetMap&layers=Thesis_Village_Data%3A2017_electricity&bbox=81.52483617721163%2C25.02902880963982%2C81.81289611313963%2C25.345409991110564&width=699&height=768&srs=EPSG%3A404000&format=application/openlayers" height="600" width="575"  style="border:3px solid black;">map data</iframe>
+
+
+<img src="Legends/Electricity_2017.PNG" width="180px" height="180px"  style="position:absolute;
+  top:650px;
+  right:75px;"></img>
+<br>
+<center> <h2> Comparison of Electricity in schools in 2012-13 and 2017-18 in Shankargarh area of Bara Tehsil in Prayagraj District</h2> </center>
+
+
+<footer>Created By- Divyanshi Dixit</footer>
+
+</div>
+
+</body>
+</html>

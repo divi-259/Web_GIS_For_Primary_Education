@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<script>
+function abc()
+{
+var arr=new Array("about/pic1.jpg","about/pic2.png","about/pic3.jpg","about/pic4.png","about/pic4.png","about/pic4.png");
+var ind=eval(document.f1.h1.value);
+document.img.src=arr[ind];
+document.f1.h1.value=ind+1;
+if(document.f1.h1.value==5)
+{
+document.f1.h1.value=0;
+}
+}
+setInterval("abc()",3000);
+</script>
+<head>
+<title>WEB GIS Application</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<br>
+   <a href="index.html" style="text-decoration:none"><center><b><div class="title"><font size="10px">WEB GIS</font></div></b></center></a>
+   <br><br>
+<div id="Top_menu" align="left"> 
+	<a href="index.html"><div class="tab">Home</div></a>
+	<a  href="about.html"><div class="tab">About Us</div></a>
+	<a  href="contact.html"><div class="tab">Contact Us</div></a>
+	
+</div>
+</header>
+ <nav> 
+  <ul>
+    <li><a href="mobile.php">Map data</a><hr>
+				<ul >
+					<li><iframe src="Display_Map.html" height="400" width="600" name="Web">NYC map</iframe></li>
+					<p><a href="http://localhost:8080/geoserver/spatial/wms?service=WMS&version=1.1.0&request=GetMap&layers=spatial%3Anyc_roads&bbox=984018.1663741902%2C207673.09513056703%2C991906.4970533887%2C219622.53973435296&width=506&height=768&srs=EPSG%3A2908&format=application/openlayers" target="Web">W3Schools.com</a></p>
+
+					<li><iframe src="http://www.google.com" height="200" width="300">map data</iframe></li>
+
+				</ul>
+				</li>
+
+
+  </ul>
+</nav>
+
+<article>
+ <div id="Page"><center><img src="about/pic1.jpg" id="i" alt="" width="750" height="350" name="img"/></center>
+  <form name="f1">
+  <input type="hidden" name="h1" value="0" />
+  </form>
+    <div id="Page_top">
+  <p><i> <center><font style="font-family:'Times New Roman'"><h3>WEB GIS Application</h3><h4>An Online Web GIS Application implemented using QGIS</h4></font><br>
+</center></i>
+  </p>
+
+ 
+  </div>
+  </div>
+  <font size="5px" style="font-family:'Times New Roman';font-weight:bold">Why WEB GIS Application??</font>
+  <font size="4px" style="font-family:'Times New Roman'"><p> An online web GIS portal to access the spatial data and make use of it in easy and understandable format. Our website provides </p></font>
+  
+</article>
+
+<footer>Created By- Divyanshi Dixit</footer>
+
+</div>
+
+</body>
+</html>

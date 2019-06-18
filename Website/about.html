@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<script>
+function abc()
+{
+var arr=new Array("about/about.jpg");
+var ind=eval(document.f1.h1.value);
+document.img.src=arr[ind];
+document.f1.h1.value=ind+1;
+if(document.f1.h1.value==1)
+{
+document.f1.h1.value=0;
+}
+}
+setInterval("abc()",3000);
+</script>
+<head>
+<title>WEB GIS Application-About Us</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<br>
+   <a href="index.php" style="text-decoration:none"><center><b><div class="title"><font size="20px">WEB GIS</font></div></b></center></a>
+   <br><br>
+<div id="Top_menu" align="left"> 
+	<a href="index.html"><div class="tab">Home</div></a>
+				<a href="gallery.html"><div class="tab">Gallery</div></a>
+
+	<a  href="about.html"><div class="tab">About Us</div></a>
+	<a  href="contact.html"><div class="tab">Contact Us</div></a>
+	
+
+	
+</div>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="s_obc.html">Students' Information</a><hr>
+				<ol >
+					<li><a href="s_obc.html" height="200" width="300">OBC Students</a></li>
+					<li><a href="s_sc.html" height="200" width="300">SC Students</a></li>
+					<li><a href="s_st.html" height="200" width="300">ST Students</a></li>
+					<li><a href="s_total.html" height="200" width="300">Total Students</a></li>
+					<li><a href="s_gbratio.html" height="200" width="300">Girl Students</a></li>
+
+				</ol>
+				</li>
+				
+				    <li><a href="t_male.html">Teaching Staff Information</a><hr>
+				<ol >
+					<li><a href="t_male.html" height="200" width="300">Male Teachers</a></li>
+					<li><a href="t_female.html" height="200" width="300">Female Teachers</a></li>
+					<li><a href="t_head.html" height="200" width="300">Head Teacher</a></li>
+
+
+				</ol>
+				</li>
+    <li><a href="f_electric.html">Students' Information</a><hr>
+				<ol >
+					<li><a href="f_electric.html" height="200" width="300">Electricity</a></li>
+					<li><a href="f_toilet.html" height="200" width="300">Toilets</a></li>
+					<li><a href="f_water.html" height="200" width="300">Drinking Water</a></li>
+					<li><a href="f_computer.html" height="200" width="300">Computer</a></li>
+					<li><a href="f_classroom.html" height="200" width="300">Number of Classrooms</a></li>
+
+				</ol>
+				</li>
+
+  </ul>
+</nav>
+
+<article>
+ <div id="Page"><center><img src="about/about.jpg" id="i" alt="" width="650" height="350" name="img"/></center>
+  <form name="f1">
+  <input type="hidden" name="h1" value="0" />
+  </form>
+    <div id="Page_top">
+   <p><i> <center><font style="font-family:'Times New Roman'"><h3>Web GIS</h3><h4>An Online GIS portal for School Information of Bara Tehsil of Prayagraj District</h4></marquee><br>
+</center></i>
+  </p>
+
+ 
+  </div>
+  </div>
+   <font size="5px" style="font-family:Times New Roman;font-weight:bold">About Us</font>
+  <font size="4px" style="font-family:Times New Roman"><p>
+  
+  The sole purpose of this website is to show the changes in school faclities and other information from 2012-13 to 2017-18 in Shankargarh area of Bara Tehsil in Prayagraj District.
+</p>
+<p> Anyone can access the website with use of mere internet and without any requiremnet of GIS tools. </p><p>The Side bar gives links for comparing specific type of information in two academic years (2012-13 and 2017-18) in vector data format. The Gallery Icon contains these information in Raster format (JPG or JPEG). </p></font>
+  
+</article>
+
+<footer>Created By- Divyanshi Dixit</footer>
+
+</div>
+
+</body>
+</html>
